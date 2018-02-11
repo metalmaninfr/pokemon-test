@@ -5,11 +5,11 @@ html {
 body {
   background-image: url("../img/kanto.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main-container {
-  margin: 70px auto;
+  margin: 20rem auto;
   height: 500px;
   width: 500px;
   background: #efefef;
@@ -43,7 +43,6 @@ weakness: fighting
 
 .eevee-level {
   margin-top: 1.5rem;
-  margin-left: 4rem;
 }
 
 .eevee-level p {
@@ -62,13 +61,13 @@ weakness: fighting
   width: 12rem;
   background: black;
   -webkit-clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%);
-clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%);
+  clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%);
 }
 
 
 .eevee-img {
   position: absolute;
-  top: 10rem;
+  top: 8rem;
   right: 10rem;
 }
 
@@ -170,10 +169,6 @@ weakness: Ground
   text-transform: uppercase;
   margin: 2rem 1rem;
 }
-
-
-
-
 
 
 /* ----- Progress bar -----*/
