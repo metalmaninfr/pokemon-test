@@ -153,13 +153,14 @@ weakness: Ground
   border: 3px solid black;
 }
 
-.arrow {
+.arrow, .combat-arrow {
   position: absolute;
   top: 2.5rem;
   left: 0.2rem;
   height: 1.5rem;
   width: 1.5rem;
   background: black;
+  animation: flashing 1s linear infinite;
   -webkit-clip-path: polygon(50% 50%, 0 0, 0 100%);
   clip-path: polygon(50% 50%, 0 0, 0 100%);
 }
@@ -169,6 +170,29 @@ weakness: Ground
   text-transform: uppercase;
   margin: 2rem 1rem;
 }
+
+/*-------combat fight------*/
+
+.combat-fight-container {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  height: 150px;
+  width: 48%;
+  border: 3px solid black;
+  z-index: 4;
+}
+
+.attack-1, .attack-2, .attack-3, .attack-4 {
+  font-size: 1.7rem;
+  margin: 2.5rem 1.4rem;
+}
+
+
+
 
 
 /* ----- Progress bar -----*/
@@ -193,4 +217,16 @@ progress[value]::-webkit-progress-value {
   background: #026b03;
   border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+/* ----------keyframes--------*/
+
+@keyframes flashing {
+  0%, 100% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
 }
