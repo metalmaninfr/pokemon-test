@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-image: url("../img/kanto.jpg");
   background-repeat: no-repeat;
@@ -9,4 +13,73 @@ body {
   height: 800px;
   width: 800px;
   background: #efefef;
+}
+
+/* ---------- EeVEE -------
+
+pokemon: Eevee
+pokedex: #133
+type: normal
+weakness: fighting
+
+---------------------------*/
+
+.eevee-container {
+  height: 280px;
+  width: 100%;
+  background: red;
+}
+
+.eevee-name {
+  margin: 5rem 5rem;
+}
+
+.eevee-name h2 {
+  font-size: 2rem;
+}
+
+.eevee-level {
+  margin-top: 1.5rem;
+  margin-left: 4rem;
+
+}
+
+.eevee-level p {
+  font-size: 2rem;
+}
+
+/* ---------- Pikachu -------
+
+pokemon: Pikachu
+pokedex: #025
+type: Electric
+weakness: Ground
+
+---------------------------*/
+.pikachu-container {
+  height: 280px;
+  width: 100%;
+  background: blue;
+}
+
+
+
+
+/* ----- Progress bar -----*/
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+progress {
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #026b03;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
