@@ -1,0 +1,12 @@
+body {
+  background-image: url("../img/kanto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-container {
+  margin: 70px auto;
+  height: 800px;
+  width: 800px;
+  background: #efefef;
+}
