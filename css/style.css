@@ -10,8 +10,8 @@ body {
 
 .main-container {
   margin: 70px auto;
-  height: 800px;
-  width: 800px;
+  height: 500px;
+  width: 500px;
   background: #efefef;
 }
 
@@ -26,18 +26,19 @@ weakness: fighting
 
 .eevee-container {
   position: relative;
-  height: 280px;
+  height: 110px;
   width: 100%;
 }
 
 .eevee-name {
   position: absolute;
   top: 5rem;
-  left: 20rem;
+  left: 8rem;
 }
 
 .eevee-name h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .eevee-level {
@@ -68,7 +69,7 @@ clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%
 .eevee-img {
   position: absolute;
   top: 10rem;
-  right: 20rem;
+  right: 10rem;
 }
 
 /* ---------- Pikachu -------
@@ -80,10 +81,97 @@ weakness: Ground
 
 ---------------------------*/
 .pikachu-container {
-  height: 280px;
+  position: relative;
+  height: 190px;
   width: 100%;
-  background: blue;
 }
+
+.pikachu-name {
+  position: absolute;
+  top: 10rem;
+  right: 4rem;
+}
+
+.pikachu-name h2 {
+  font-size: 2rem;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.pikachu-level {
+  margin-top: 1.5rem;
+  margin-left: 4rem;
+}
+
+.pikachu-level p {
+  font-size: 2rem;
+}
+
+.pikachu-healthBar {
+  position: relative;
+}
+
+.pikachu-blackLine {
+  position: absolute;
+  top: -8rem;
+  left: -1rem;
+  height: 10rem;
+  width: 12rem;
+  background: black;
+  -webkit-clip-path: polygon(100% 70%, 100% 100%, 0 100%, 0 86%, 8% 94%, 93% 94%, 93% 70%);
+  clip-path: polygon(100% 70%, 100% 100%, 0 100%, 0 86%, 8% 94%, 93% 94%, 93% 70%);
+}
+
+
+.pikachu-img {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+
+
+/* ---------- Combat menu ---- */
+
+
+.menu-container {
+  position: relative;
+  margin: 30px auto;
+  height: 150px;
+  width: 90%;
+  border: 3px solid black;
+}
+
+.combat-container-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  height: 150px;
+  width: 48%;
+  border: 3px solid black;
+}
+
+.arrow {
+  position: absolute;
+  top: 2.5rem;
+  left: 0.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: black;
+  -webkit-clip-path: polygon(50% 50%, 0 0, 0 100%);
+  clip-path: polygon(50% 50%, 0 0, 0 100%);
+}
+
+.combat-fight, .combat-pokemon, .combat-item, .combat-run {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 2rem 1rem;
+}
+
+
 
 
 
@@ -101,6 +189,11 @@ progress {
   border-radius: 25px;
 }
 
+progress[value]::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 progress[value]::-webkit-progress-value {
   background: #026b03;
   border-radius: 2px;
