@@ -25,13 +25,15 @@ weakness: fighting
 ---------------------------*/
 
 .eevee-container {
+  position: relative;
   height: 280px;
   width: 100%;
-  background: red;
 }
 
 .eevee-name {
-  margin: 5rem 5rem;
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
 }
 
 .eevee-name h2 {
@@ -41,11 +43,32 @@ weakness: fighting
 .eevee-level {
   margin-top: 1.5rem;
   margin-left: 4rem;
-
 }
 
 .eevee-level p {
   font-size: 2rem;
+}
+
+.eevee-healthBar {
+  position: relative;
+}
+
+.eevee-blackLine {
+  position: absolute;
+  top: -8rem;
+  left: -1rem;
+  height: 10rem;
+  width: 12rem;
+  background: black;
+  -webkit-clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%);
+clip-path: polygon(6% 70%, 6% 93%, 95% 93%, 100% 82%, 100% 100%, 0% 100%, 0% 70%);
+}
+
+
+.eevee-img {
+  position: absolute;
+  top: 10rem;
+  right: 20rem;
 }
 
 /* ---------- Pikachu -------
