@@ -175,8 +175,6 @@ weakness: Ground
 
 .combat-fight-container {
   display: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: absolute;
   top: -3px;
   right: -3px;
@@ -185,10 +183,13 @@ weakness: Ground
   border: 3px solid black;
   z-index: 4;
 }
+.combat-arrow {
+  top: 1.5rem;
+}
 
 .attack-1, .attack-2, .attack-3, .attack-4 {
   font-size: 1.7rem;
-  margin: 2.5rem 1.4rem;
+  margin: 1.5rem 1.4rem 0;
 }
 
 
