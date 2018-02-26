@@ -181,7 +181,6 @@ weakness: Ground
   height: 150px;
   width: 48%;
   border: 3px solid black;
-  z-index: 4;
 }
 .combat-arrow {
   top: 1.5rem;
@@ -192,7 +191,35 @@ weakness: Ground
   margin: 1.5rem 1.4rem 0;
 }
 
+.combat-stats {
+  display: none;
+  position: absolute;
+  top: -106px;
+  left: -3px;
+  height: 100px;
+  width: 48%;
+  background:#efefef;
+  border: 3px solid black;
+  line-height: 1.5;
+}
 
+.combat-typeTitle {
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.combat-typeAttack {
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 4rem;
+}
+
+.combat-PP {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3.5rem;
+}
 
 
 
